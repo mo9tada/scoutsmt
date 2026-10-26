@@ -7,6 +7,8 @@
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_v4-06B6D4?logo=tailwindcss&logoColor=white)
 
+**Live:** [scoutsmt.tn](https://scoutsmt.tn)
+
 A full-stack web platform for a real scout group in Menzel Temime, Tunisia. It replaces paper forms and Facebook posts with one place where families register their children, members follow upcoming events, and leaders manage everything from an admin dashboard.
 
 The interface is in French, for the group's members.
