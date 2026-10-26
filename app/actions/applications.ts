@@ -1,6 +1,7 @@
 "use server"
 
 import { createServerClient } from "../../lib/supabaseClient"
+import { checkAdminAuth } from "./admin"
 import { revalidatePath } from "next/cache"
 
 export async function submitApplication(prevState: any, formData: FormData) {
@@ -78,6 +79,8 @@ export async function submitApplication(prevState: any, formData: FormData) {
 }
 
 export async function getApplications() {
+  if (!(await checkAdminAuth())) return []
+
   const supabase = createServerClient()
 
   try {
@@ -96,6 +99,10 @@ export async function getApplications() {
 }
 
 export async function updateApplicationStatus(applicationId: string, status: string, adminNotes?: string) {
+  if (!(await checkAdminAuth())) {
+    return { success: false, message: "Unauthorized" }
+  }
+
   const supabase = createServerClient()
 
   try {
