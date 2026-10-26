@@ -3,8 +3,8 @@ import "./globals.css"
 import { Navbar } from "@/components/navbar"
 
 export const metadata: Metadata = {
-  title: "My App",
-  description: "Responsive Next.js App",
+  title: "Scouts Menzel Temime",
+  description: "Events, registrations and member management for the Scouts Menzel Temime group",
 }
 
 export default function RootLayout({

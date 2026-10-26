@@ -9,10 +9,9 @@ import { Loader2 } from "lucide-react"
 
 interface AuthFormProps {
   type: "login" | "signup"
-  action: (prevState: any, formData: FormData) => Promise<{ message: string } | void>
 }
 
-export function AuthForm({ type, action }: AuthFormProps) {
+export function AuthForm({ type }: AuthFormProps) {
   const registerUser = async (prevState: any, formData: FormData) => {
     const payload = {
       last_name: formData.get("last_name")?.toString() || "",
