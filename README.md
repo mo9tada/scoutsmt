@@ -11,6 +11,8 @@ A full-stack web platform for a real scout group in Menzel Temime, Tunisia. It r
 
 The interface is in French, for the group's members.
 
+![Scouts Menzel Temime home page](docs/home.jpg)
+
 ## Features
 
 | For families and members | For leaders (admin dashboard) |
